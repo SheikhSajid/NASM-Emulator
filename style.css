@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #afa996;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-bet {
+  justify-content: space-between;
+}
+
+.bd {
+  border: 2px solid black;
+}
+
+.label {
+  font-family: "Russo One", sans-serif;
+  background-color: #afa996;
+  color: #625c4a;
+  position: absolute;
+  left: 15px;
+  top: -10px;
+  padding: 0 3px 0 3px;
+}
+
+/* Register file */
+.registers {
+  flex-basis: 100%;
+  border: 2px solid #625c4a;
+  border-radius: 10px;
+  position: relative;
+}
+
+.registers .col div:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.register-name {
+  font-family: "Russo One", sans-serif;
+  color: #625c4a;
+  text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.2);
+  margin-right: 1px;
+}
+
+.register-value {
+  font-family: "Segment7Standard";
+  background-color: black;
+  color: rgb(1, 177, 1);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.p-1 {
+  padding: 10px;
+}
