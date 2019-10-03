@@ -7,6 +7,10 @@ body {
   background: #afa996;
 }
 
+.container {
+  min-height: 100vh;
+}
+
 *,
 *:before,
 *:after {
@@ -35,6 +39,10 @@ body {
   border: 2px solid black;
 }
 
+.p-1 {
+  padding: 10px;
+}
+
 .label {
   font-family: "Russo One", sans-serif;
   background-color: #afa996;
@@ -43,6 +51,15 @@ body {
   left: 15px;
   top: -10px;
   padding: 0 3px 0 3px;
+}
+
+.section-border {
+  border: 2px solid #625c4a;
+  border-radius: 10px;
+}
+
+.relative {
+  position: relative;
 }
 
 /* Register file */
@@ -72,6 +89,14 @@ body {
   border-radius: 5px;
 }
 
-.p-1 {
-  padding: 10px;
+/* Code editor */
+.editor-container {
+  flex-basis: 45%;
+}
+
+.editor {
+  background-color: black;
+  color: rgb(1, 177, 1);
+  border-radius: 5px;
+  flex-grow: 1;
 }

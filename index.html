@@ -21,7 +21,7 @@
     <title>IDE</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container col">
       <!-- registers -->
       <div class="row p-1">
         <div class="row registers p-1 space-around">
@@ -102,11 +102,14 @@
         </div>
       </div>
 
-      <!-- <div class="row">
-        <div class="solid-red">
-          Hey
+      <div style="flex-grow: 1" class="row p-1">
+        <div class="col editor-container p-1 relative section-border">
+          <div class="label">Code</div>
+          <textarea class="editor"></textarea>
         </div>
-      </div> -->
+
+        <div class=""></div>
+      </div>
     </div>
   </body>
 </html>
