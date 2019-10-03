@@ -90,8 +90,53 @@ body {
 }
 
 /* Code editor */
+.code-container {
+  flex-basis: 55%;
+}
+
 .editor-container {
-  flex-basis: 45%;
+  flex-basis: 85%;
+}
+
+.button-container {
+  background-color: black;
+  padding: 5px;
+  width: 78px;
+}
+
+.controls {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.key {
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px;
+  margin-right: 0;
+  width: 62px;
+  height: 62px;
+  background: #343536;
+  border: none;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3);
+  transition: all 0.1s;
+}
+
+.key-center {
+  display: inline-block;
+  color: white;
+  font-family: Arial;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(top, #343536 0%, #343536 60%, #484b4d 100%);
+  border-radius: 12px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3);
 }
 
 .editor {
@@ -99,4 +144,9 @@ body {
   color: rgb(1, 177, 1);
   border-radius: 5px;
   flex-grow: 1;
+  resize: none;
+}
+
+.bg-dark {
+  background-color: #625c4a;
 }

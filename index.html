@@ -103,9 +103,28 @@
       </div>
 
       <div style="flex-grow: 1" class="row p-1">
-        <div class="col editor-container p-1 relative section-border">
+        <div class="row relative code-container section-border">
           <div class="label">Code</div>
-          <textarea class="editor"></textarea>
+          <div class="col editor-container p-1">
+            <textarea class="editor"></textarea>
+          </div>
+          <div class="p-1 bg-dark col controls">
+            <div class="button-container">
+              <button class="key">
+                <div class="key-center">Compile</div>
+              </button>
+            </div>
+            <div class="button-container">
+              <button class="key">
+                <div class="key-center">Run</div>
+              </button>
+            </div>
+            <div class="button-container">
+              <button style="background: #db4343;" class="key">
+                <div class="key-center">Reset</div>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div class=""></div>
